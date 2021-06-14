@@ -1,0 +1,66 @@
+{
+  "restaurants": [
+    {
+      "name": "OM Restaurant",
+      "adress": "Delhi Sector 20",
+      "email": "om@test.com",
+      "id": 2
+    },
+    {
+      "name": "Nux Coffee",
+      "adress": "Kibris St. No 15",
+      "email": "nux@test.com",
+      "id": 3
+    },
+    {
+      "name": "Parus Pub",
+      "adress": "Gunes Sk 4aaaa",
+      "email": "parus@test.com",
+      "id": 4
+    },
+    {
+      "name": "Deniz Hazal Beyaz",
+      "adress": "adressxf",
+      "email": "noktalama@test.com",
+      "id": 6
+    },
+    {
+      "name": "asd",
+      "adress": "asd",
+      "email": "asd",
+      "id": 9
+    },
+    {
+      "name": "Hele",
+      "adress": "sdf",
+      "email": "amaaan@amançcon",
+      "id": 10
+    },
+    {
+      "name": "Hasibe Restoran",
+      "adress": "M. A. Ersoy Cad. 33",
+      "email": "hasibe@beyaz.com",
+      "id": 11
+    },
+    {
+      "name": "Canım",
+      "adress": "naber ",
+      "email": "nassın",
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "name": "deniz",
+      "password": "123",
+      "email": "deniz@test.com",
+      "id": 1
+    },
+    {
+      "name": "ana",
+      "password": "nana",
+      "email": "baba",
+      "id": 2
+    }
+  ]
+}

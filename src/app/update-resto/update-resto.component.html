@@ -1,0 +1,46 @@
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Update Restaurant</li>
+  </ol>
+</nav>
+
+<div *ngIf="alert.type"  [className]="alert.type=== 'success' ? 'alert alert-success' : 'alert alert-danger'" role="alert">
+  {{alert.text}}
+  <button type="button"  (click)="closeAlert()" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<form [formGroup]="changeResto" (submit)="updateResto()">
+  <div class="form-group">
+    <label for="namefield">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="namefield"
+      placeholder="Enter Name"
+      formControlName="name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="adressfield">Adress</label>
+    <input
+      type="text"
+      class="form-control"
+      id="adressfield"
+      placeholder="Enter Adress"
+      formControlName="adress"
+    />
+  </div>
+  <div class="form-group">
+    <label for="emailfield">Email</label>
+    <input
+      type="text"
+      class="form-control"
+      id="emailfield"
+      formControlName="email"
+      placeholder="Enter Email"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary my-3">Submit Changes</button>
+</form>

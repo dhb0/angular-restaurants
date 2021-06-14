@@ -1,0 +1,28 @@
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Restaurent List</li>
+  </ol>
+</nav>
+<table class="table table-hover table-striped mt-2">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Email</th>
+        <th>Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listCollection">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.adress}}</td>
+        <td>{{item.email}}</td>
+        <td><i class="fa fa-trash p-2" (click)="removeResto(item.id)" style="color:red; font-size: 20px; cursor:pointer"></i>
+          <a routerLink="/update/{{item.id}}"><i class="fa fa-edit p-2" style="color:darkblue; font-size: 20px; cursor:pointer"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
